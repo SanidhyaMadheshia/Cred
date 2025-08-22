@@ -8,6 +8,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const morgan = require("morgan");
 require("dotenv").config();
+import serverless from "serverless-http";
+
 
 // Import routes
 const predictionRoutes = require("./routes/prediction");
@@ -172,4 +174,4 @@ if (require.main === module) {
   startServer();
 }
 
-module.exports = app;
+module.exports = serverless(app);
