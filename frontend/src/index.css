@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Custom Scrollbar */
+
+/* Hide the default scrollbar width */
+::-webkit-scrollbar {
+  width: 8px; /* scrollbar ki width */
+  height: 8px; /* horizontal ke liye */
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: #0d141c; /* dark background */
+}
+
+/* Scroll thumb (jo move hota hai) */
+::-webkit-scrollbar-thumb {
+  background-color: #248bf3; /* tumhare brand ka blue */
+  border-radius: 10px;
+  border: 2px solid #0d141c; /* gap effect */
+}
+
+/* On hover thumb color change */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #49739c;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin; /* thin / auto */
+  scrollbar-color: #248bf3 #0d141c; /* thumb track */
+}
