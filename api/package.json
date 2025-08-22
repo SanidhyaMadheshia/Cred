@@ -2,7 +2,7 @@
   "name": "credit-rating-backend",
   "version": "1.0.0",
   "description": "Backend API for Credit Rating ML Pipeline with MongoDB",
-  "main": "backend.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
